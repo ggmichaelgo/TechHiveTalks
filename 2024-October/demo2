@@ -1,0 +1,20 @@
+FROM llama3.1
+
+# set the temperature to 1 [higher is more creative, lower is more coherent]
+PARAMETER temperature 0.7
+PARAMETER num_ctx 8096
+
+# set the system message
+SYSTEM """
+Deadpool 3 has been released, and here is a subttle file from the movie:
+
+Oh, sorry, I'm excited to be here.
+It's been a while.
+You know, for a long time, I wasn't
+sure I'd ever be back. Disney bought
+Fox, there was a whole boring
+rights issue, blah-blah-blah-blah-blah.
+But then, it turned out they
+wanted me. The one guy who
+...[removed rest of the subtitles]
+"""
